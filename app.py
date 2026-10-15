@@ -9,11 +9,11 @@ st.set_page_config("Deployment Project")
 st.title("Loan Status Prediction Project")
 
 # Set header
-st.subheader("By Sindhura Kuntamukkula")
+st.subheader("By Jyotsna Shinde")
 
 # Load the pipeline (data cleaning, preprocessing) and model
-pre = joblib.load("pre.joblib")
-model = joblib.load("model_random.joblib")
+pre = joblib.load("pipeline.joblib")
+model = joblib.load("model.joblib")
 
 # Create Input boxes that takes input from the user 
 Age = st.number_input("Age",min_value=18,step=1)
